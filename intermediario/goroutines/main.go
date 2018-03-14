@@ -21,7 +21,8 @@ func main() {
 	orquestrador.Add(2)
 	log.Println("****** Começando...")
 	go traduzirParaJSON("saopaulo")
-	go traduzirParaJSON("riodejaneiro")
+	go trad
+	uzirParaJSON("riodejaneiro")
 	orquestrador.Wait()
 	log.Println("****** Acabei! ******")
 }
