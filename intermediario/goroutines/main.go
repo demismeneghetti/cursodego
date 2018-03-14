@@ -12,7 +12,7 @@ import (
 
 	"sync"
 
-	"github.com/jeffprestes/cursodego/goroutines/model"
+	"github.com/demismeneghetti/cursodego/intermediario/goroutines/model"
 )
 
 var orquestrador sync.WaitGroup
