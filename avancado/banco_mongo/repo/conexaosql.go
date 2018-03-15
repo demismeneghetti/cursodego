@@ -14,7 +14,7 @@ var Db *sqlx.DB
 //AbreConexaoComBancoDeDadosSQL funcao que abre a conexao com o banco MYSQL
 func AbreConexaoComBancoDeDadosSQL() (err error) {
 	err = nil
-	Db, err = sqlx.Open("mysql", "root@tcp(127.0.0.1:3306)/cursodego")
+	db, err = sqlx.Open("mysql", "jaburunx:mateusPrestes1@tcp(jaburunx.mysql.dbass.com.br:3306)/jaburunx?parseTime=true")
 	if err != nil {
 		return
 	}
