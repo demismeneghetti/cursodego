@@ -34,5 +34,4 @@ func main() {
 
 	var entrada string
 	fmt.Scanln(&entrada)
-
 }

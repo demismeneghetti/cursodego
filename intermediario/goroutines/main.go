@@ -12,7 +12,7 @@ import (
 
 	"sync"
 
-	"github.com/jeffprestes/cursodego/goroutines/model"
+	"github.com/demismeneghetti/cursodego/intermediario/goroutines/model"
 )
 
 var orquestrador sync.WaitGroup
@@ -21,7 +21,8 @@ func main() {
 	orquestrador.Add(2)
 	log.Println("****** Começando...")
 	go traduzirParaJSON("saopaulo")
-	go traduzirParaJSON("riodejaneiro")
+	go trad
+	uzirParaJSON("riodejaneiro")
 	orquestrador.Wait()
 	log.Println("****** Acabei! ******")
 }
